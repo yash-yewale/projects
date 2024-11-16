@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinBuddy - Smart E-Waste Recycling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="BinBuddy Logo" height="60px">
+        </div>
+        <div id="title">BinBuddy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recycleitem.html" >Recycle Items</a></li>
+                <li><a href="recyclingcenter.html">Recycling Centers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+        
+            <div class="sign-up">
+              <li> <a href="#" id="sign-in">Sign In</a></li>
+               <li> <a href="#" id="sign-up">Sign Up</a></li>
+            
+            </div>
+        </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <!-- Hero content goes here -->
+            <div class="flowchart-container">
+                <div class="earth-content">
+                    <!-- Text on the left side of the image -->
+                    <div class="earth-text">
+                        <h2>Protecting Our Planet</h2>
+                        <p >Join us in our mission to recycle e-waste and reduce environmental harm. Every step counts towards a greener, healthier Earth.</p>
+                    </div>
+                    <!-- Earth image -->
+                    <div class="earth-image">
+                        <img src="earth-removebg.png" alt="earth">
+                    </div>
+                </div>
+            </div>
+            
+                <section id="impact-stats">
+                    <div class="stat">
+                      <h3 class="counter" data-target="5000">0</h3>
+                      <p style="color: white;">Tons of e-waste recycled style</p>
+                    </div>
+                    <div class="stat">
+                      <h3 class="counter" data-target="1500">0</h3>
+                      <p style="color: white;">Reduction in landfill waste (tons)</p>
+                    </div>
+                    <div class="stat">
+                      <h3 class="counter" data-target="800">0</h3>
+                      <p style="color: white;">Resources recovered (kg)</p>
+                    </div>
+                    <div class="stat">
+                      <h3 class="counter" data-target="12000">0</h3>
+                      <p style="color: white;">Carbon emissions reduced (kg)</p>
+                    </div>
+                  </section>
+                  
+        </div>
+    </section>
+
+    <section id="flowchart">
+        <h1>How BinBuddy Works</h1>
+        <div class="flowchart-container">
+            <div class="step" id="step1">
+                <img src="scheduling.gif" alt="Schedule Pickup">
+                <p>1. Schedule a pickup.</p>
+            </div>
+            <div class="step" id="step2">
+                <img src="pickup.gif" alt="E-Waste Collection">
+                <p>2. We collect your e-waste.</p>
+            </div>
+            <div class="step" id="step3">
+                <img src="third.gif" alt="Recycle">
+                <p>3. We recycle responsibly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rewards">
+        <h2>Corporate Sustainability Rewards</h2>
+        <div class="rewards-container">
+            <div class="reward">
+                <h3>Green Badge</h3>
+                <p>Earn a green badge by recycling 1 ton of e-waste.</p>
+            </div>
+            <div class="reward">
+                <h3>Public Recognition</h3>
+                <p>Get featured on our website as an eco-friendly company.</p>
+            </div>
+            <div class="reward">
+                <h3>Discounts</h3>
+                <p>Receive discounts on future pickups when you recycle more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ewaste-handling">
+        <h2>How to Prepare E-Waste</h2>
+        <p>Proper handling of e-waste is crucial to ensure safe recycling. Follow these guidelines:</p>
+        <ul>
+            <li>Remove any batteries from devices.</li>
+            <li>Wipe personal data from electronic devices.</li>
+            <li>Separate hazardous materials like mercury bulbs.</li>
+        </ul>
+    </section>
+
+    <!-- Sign In Popup -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignIn">&times;</span>
+            <h2>Sign In</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="modal-btn">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Popup -->
+<div id="signUpModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeSignUp">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="sign-up-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+            <label for="city">Username</label>
+            <input type="text" id="username" name="username" placeholder="create username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create Password" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+    </div>
+</div>
+    <footer>
+        <div class="footer-content">
+            <h3>BinBuddy</h3>
+            <p style="color: white;">Your partner in smarter recycling solutions, helping you build a sustainable future with ease and efficiency.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: white;">&copy; 2024 BinBuddy | Designed by Students</p>
+        </div>
+    </footer>
+</body>
+</html>

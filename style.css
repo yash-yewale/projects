@@ -1,0 +1,340 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+#navbar {
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo img {
+  height: 60px;
+  width: auto;
+}
+
+#title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+ ul li a:hover,
+nav ul li a.active {
+  background-color: #3e8e41;
+}
+
+/* Hero Section */
+#hero {display: inline-block;
+  background-image: url('greenbg.jpg');
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: white;
+  
+}
+
+#hero h1 {
+  font-size: 48px;
+}
+
+#hero .cta-btn {
+  background-color: #111;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#hero .cta-btn:hover {
+  background-color: #4CAF50;
+}
+#impact-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color:Black;
+}
+
+.stat {
+  text-align: center;
+}
+
+.counter {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4CAF50; /* Use your theme color */
+  transition: all 0.5s ease-in-out;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+
+/* Flowchart Section */
+#flowchart {
+  padding: 50px;
+  text-align: center;
+}
+
+.flowchart-container {
+  display: flex;
+  justify-content: space-between;
+}
+.earth-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px; /* Adjust for positioning */
+}
+
+.earth-text {
+  max-width: 40%; /* You can adjust the width */
+  margin-right: 50px; /* Space between text and image */
+  color: white; /* Text color to match the theme */
+  animation: bounceText 2s infinite;
+}
+
+.earth-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.earth-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.earth-image img {
+  width: 800px; /* Adjust the image size */
+  height: auto;
+  margin-bottom: 30px;
+}
+
+
+.step {
+  width: 30%;
+}
+
+.step img {
+  width: 100%;
+}
+
+#step1 {
+  margin-top: 100px;
+}
+
+#step2 {
+  margin-top: 195px;
+}
+
+.step p {
+  margin-top: 10px;
+}
+
+/* Rewards Section */
+#rewards {
+  padding: 50px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.rewards-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reward {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reward h3 {
+  color: #4CAF50;
+}
+
+/* E-Waste Handling Section */
+#ewaste-handling {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white; /* White background for the modal */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the modal */
+  width: 400px; /* Fixed width */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  position: relative; /* Position for close button */
+}
+
+/* Close Button */
+.close {
+  position: absolute; /* Position at the top right */
+  top: 10px;
+  right: 15px;
+  font-size: 20px; /* Font size for the close button */
+  color: #aaa; /* Light gray color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.close:hover,
+.close:focus {
+  color: #000; /* Darker color on hover */
+}
+
+/* Modal Heading */
+.modal h2 {
+  margin: 0 0 15px; /* Margin for heading */
+  color: #4CAF50; /* Green color for headings */
+}
+
+/* Input Fields */
+.modal input[type="text"],
+.modal input[type="password"],
+.modal input[type="email"] {
+  width: 100%; /* Full width input */
+  padding: 10px; /* Padding inside input */
+  margin: 10px 0; /* Margin around inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+/* Submit Button */
+.modal button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px; /* Padding inside button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size */
+  width: 100%; /* Full width button */
+  margin-top: 10px; /* Margin above button */
+}
+
+.modal button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.socials {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials li {
+  margin: 0 15px;
+}
+
+.socials li a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+  color: #4CAF50;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+

@@ -1,0 +1,230 @@
+/* Header Styling */
+#navbar {
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo img {
+  height: 60px;
+  width: auto;
+}
+
+#title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #3e8e41;
+}
+
+/* Corporate Guidelines */
+#corporate-guidelines {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+#corporate-guidelines h1 {
+  font-size: 36px;
+  color: rgb(111, 172, 27);
+  margin-bottom: 20px;
+}
+
+.guidelines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.guideline-card {
+  background-color: #fff;
+  border: 2px solid rgb(111, 172, 27);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInUp 1s;
+}
+
+.guideline-card h3 {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.guideline-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Bulk Form Styling */
+#bulk-recycling-form {
+  text-align: center;
+  padding: 50px;
+  background-color: #f1f1f1;
+}
+
+#bulk-recycling-form h2 {
+  font-size: 28px;
+  color: rgb(111, 172, 27);
+  margin-bottom: 20px;
+}
+
+#bulkForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bulkForm label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#bulkForm input, #bulkForm textarea {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(111, 172, 27);
+  border-radius: 5px;
+}
+
+#bulkForm button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#bulkForm button:hover {
+  background-color: #3e8e41;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Impact Metrics */
+#impact-metrics {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.metric-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card h3 {
+  font-size: 22px;
+  color: #4CAF50;
+}
+
+.metric-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.socials {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials li {
+  margin: 0 15px;
+}
+
+.socials li a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+  color: #4CAF50;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+

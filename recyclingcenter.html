@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Recycling Centers & Pickup - BinBuddy</title>
+    <link rel="stylesheet" href="recyclingcenter.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script> -->
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="recyclingcenters.js" defer></script>
+</head>
+<body>
+    <header id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="BinBuddy Logo">
+        </div>
+        <div id="title">BinBuddy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recycleitem.html">Recycle Items</a></li>
+                <li><a href="recyclingcenters.html" class="active">Recycling Centers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="map-section">
+            <h1>Find a Recycling Center</h1>
+            <div id="location-search">
+                <input type="text" id="locationInput" placeholder="Enter your location">
+                <button id="searchLocation">Search</button>
+            </div>
+            <div id="map"></div>
+        </section>
+
+        <section id="center-info">
+            <h2>Recycling Centers Near You</h2>
+            <div id="center-list" class="center-grid">
+                <!-- Dynamic Recycling Centers will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>BinBuddy</h3>
+            <p>Your partner in smarter recycling solutions, helping you build a sustainable future with ease and efficiency.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BinBuddy | Designed by Students</p>
+        </div>
+    </footer>
+</body>
+</html>

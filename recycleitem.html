@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycle items</title>
+    <link rel="stylesheet" href="recycleitem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="recycle.js" defer></script>
+</head>
+<body>
+    <header id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="BinBuddy Logo" height="60px">
+        </div>
+        <div id="title">BinBuddy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recyclecorporate.html" class="active">Recycle items</a></li>
+                <li><a href="recyclingcenter.html">Recycling Centers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Corporate E-Waste Handling Section -->
+        <section id="corporate-guidelines">
+            <h1>Corporate E-Waste Recycling</h1>
+            <p>Find out how to manage and recycle large volumes of e-waste efficiently while complying with corporate standards.</p>
+
+            <!-- Advanced E-Waste Guidelines -->
+            <div class="guidelines-grid">
+                <div class="guideline-card">
+                    <h3>Data Destruction</h3>
+                    <p>Ensure complete data destruction on electronic devices before disposal. We provide certified data wiping and destruction services for corporate clients.</p>
+                </div>
+                <div class="guideline-card">
+                    <h3>Proper Storage</h3>
+                    <p>Store your e-waste in secure containers to prevent damage or exposure to hazardous materials before it is picked up for recycling.</p>
+                </div>
+                <div class="guideline-card">
+                    <h3>Hazardous Materials</h3>
+                    <p>Handle items containing hazardous materials, like batteries and certain display units, with care. Follow the guidelines for safe recycling.</p>
+                </div>
+                <div class="guideline-card">
+                    <h3>Compliance Certifications</h3>
+                    <p>Comply with industry standards like WEEE (Waste Electrical and Electronic Equipment) regulations. We ensure your recycling processes meet all legal requirements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bulk Recycling Form -->
+        <section id="bulk-recycling-form">
+            <h2>Bulk E-Waste Recycling</h2>
+            <p>Fill out the form below to schedule a bulk e-waste pickup for your company.</p>
+            <form id="bulkForm">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" placeholder="Your Company Name" required>
+
+                <label for="contactPerson">Contact Person:</label>
+                <input type="text" id="contactPerson" name="contactPerson" placeholder="Your Name" required>
+
+                <label for="items">List of Items for Recycling (Separate by commas):</label>
+                <textarea id="items" name="items" placeholder="E.g., 100 laptops, 50 phones, 30 servers" required></textarea>
+
+                <label for="pickupDate">Preferred Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+
+                <label for="address">Enter your address:</label>
+                <input type="text" id="address" name="address" placeholder="e.g., 123 Business St." required>
+
+                <button type="submit" id="next-button">Next</button>
+            </form>
+
+            <div id="results" class="hidden">
+                <h2>Recycling Information</h2>
+                <p id="recycle-info">Please enter an item and address to proceed.</p>
+            </div>
+        </section>
+
+        <!-- Impact Metrics Section -->
+        <section id="impact-metrics">
+            <h2>Our Corporate Recycling Impact</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>10,000+ Devices Recycled</h3>
+                    <p>We have helped corporations recycle over 10,000 devices sustainably.</p>
+                </div>
+                <div class="metric-card">
+                    <h3>5 Million Kg CO<sub>2</sub> Saved</h3>
+                    <p>Our recycling efforts have saved over 5 million kg of CO<sub>2</sub> emissions annually.</p>
+                </div>
+                <div class="metric-card">
+                    <h3>50+ Certified Partners</h3>
+                    <p>We work with over 50 certified e-waste recycling partners globally.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>BinBuddy</h3>
+            <p style="color: white;">Your partner in smarter recycling solutions, helping you build a sustainable future with ease and efficiency.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: white;">&copy; 2024 BinBuddy | Designed by Students</p>
+        </div>
+    </footer>
+</body>
+</html>
